@@ -1,5 +1,5 @@
 body {
-  background-color: #881c1c;
+  background-color: #e9ecef;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -7,9 +7,9 @@ body {
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 }
 
-main {
-  padding: 1vh 1rem;
-  text-align: center;
+header {
+  color: #fff;
+  background-color: #881c1c !important;
 }
 
 a {
@@ -21,3 +21,22 @@ a {
   }
 }
 
+.img-left {
+  max-width: 25%;
+  height: auto;
+  float: left;
+}
+
+.img-right {
+  max-width: 25%;
+  height: auto;
+  float: right;
+}
+
+.left {
+  padding-left: 25%;
+}
+
+.very-left {
+  padding-left: 75%;
+}

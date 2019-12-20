@@ -1,0 +1,28 @@
+---
+title: "Downloads"
+---
+= partial 'navbar'
+= partial 'header', locals: { title: 'Downloads', subtitle: 'Slides and Reports' }
+
+%section
+  .container
+    .row
+      .col-lg-8.mx-auto
+        %h2.mb-2 Slides
+        %ul.lead
+          %li
+            = link_to 'PDR Slides', 'http://www.ecs.umass.edu/ece/sdp/sdp20/team05/slides/pdr.pdf'
+        %ul.lead
+          %li
+            = link_to 'MDR Slides', 'http://www.ecs.umass.edu/ece/sdp/sdp20/team05/slides/mdr.pdf'
+
+%section.bg-light
+  .container
+    .row
+      .col-lg-8.mx-auto
+        %h2.my-3 Reports
+        %ul.lead
+          %li
+            = link_to 'MDR Report', 'http://www.ecs.umass.edu/ece/sdp/sdp20/team05/reports/mdr.docx'
+
+= partial 'footer'

@@ -1,19 +1,12 @@
 %nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-  %a.navbar-brand{href: "/"} Accoustic battleship
-  %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+  = link_to 'Acoustic Battleship', 'http://www.ecs.umass.edu/ece/sdp/sdp20/team05/index.html', class: 'navbar-brand'
+  %button.navbar-toggler{'aria-controls' => 'navbarSupportedContent', 'aria-expanded' => 'false', 'aria-label' => 'Toggle navigation', 'data-target' => '#navbarSupportedContent', 'data-toggle' => 'collapse', :type => 'button'}
     %span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
-    %ul.navbar-nav.mr-auto
-      %li.nav-item.active
-        %a.nav-link{href: "/"}
-          Home
-          %span.sr-only (current)
+    %ul.navbar-nav.ml-auto
       %li.nav-item
-        %a.nav-link{href: "#"} Team
-      %li.nav-item.dropdown
-        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-          Files
-        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-          %a.dropdown-item{:href => "#"} Slides
-          %a.dropdown-item{:href => "#"} Reports
-          %a.disabled.dropdown-item{:href => "#"} Videos
+        = link_to 'Specs', 'http://www.ecs.umass.edu/ece/sdp/sdp20/team05/specs.html', class: 'nav-link'
+      %li.nav-item
+        = link_to 'Team', 'http://www.ecs.umass.edu/ece/sdp/sdp20/team05/team.html', class: 'nav-link'
+      %li.nav-item
+        = link_to 'Downloads', 'http://www.ecs.umass.edu/ece/sdp/sdp20/team05/downloads.html', class: 'nav-link'

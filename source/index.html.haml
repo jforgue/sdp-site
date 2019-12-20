@@ -1,10 +1,41 @@
 ---
-title: "Accoustic Battleship"
+title: "Acoustic Battleship"
 ---
 
-%html
-  %body
-    %header
-      = partial 'navbar'
-    %main  
-      %h1.jumbotron Hello world
+= partial 'navbar'
+
+#carouselExampleIndicators.carousel.slide{"data-ride" => "carousel"}
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleIndicators"}
+    %li{"data-slide-to" => "1", "data-target" => "#carouselExampleIndicators"}
+    %li{"data-slide-to" => "2", "data-target" => "#carouselExampleIndicators"}
+  .carousel-inner
+    .carousel-item.active
+      %img.d-block.w-100{:alt => "First slide", :src => "images/project3.jpg"}/
+    .carousel-item
+      %img.d-block.w-100{:alt => "Second slide", :src => "images/project2.jpg"}/
+    .carousel-item
+      %img.d-block.w-100{:alt => "Third slide", :src => "images/project1.jpg"}/
+  %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleIndicators", :role => "button"}
+    %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+    %span.sr-only Previous
+  %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleIndicators", :role => "button"}
+    %span.carousel-control-next-icon{"aria-hidden" => "true"}
+    %span.sr-only Next
+
+= partial 'header', locals: { title: 'Acoustic Battleship', subtitle: 'Implementing a classic game with with acoustic localization technology.' }
+
+%section
+  .container
+    .row
+      .col-lg-8.mx-auto
+        %h2.mb-2 About Our Project
+        %p.lead
+          As digital distribution platforms have risen in popularity, board game classics are 
+          surprisingly still relevant in today’s society. However, they have failed to adapt to the technological advances of
+          today’s market. This points to an opportunity for us to adapt the classics that have stood the test of time with
+          some technology of our own. In our project we implement a technilogical medium to the
+          classic game of Battleship. Acoustic Battleship innovates on the traditional Battleship game with acoustic
+          localization technology, making accuracy part of the fun of the game.
+
+= partial 'footer'
