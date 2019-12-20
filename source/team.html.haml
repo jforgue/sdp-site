@@ -1,0 +1,29 @@
+---
+title: "Team"
+---
+= partial 'navbar'
+= partial 'header', locals: { title: 'Meet the team', subtitle: 'A 50/50 mix of CSEs and EEs' }
+
+.card-deck.mx-auto
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "images/xinyu.jpg"}/
+    .card-body
+      %h5.card-title Xinyu Cao
+      %p.card-text Computer Systems Engineer
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "images/justin.jpg"}/
+    .card-body
+      %h5.card-title Justin Forgue
+      %p.card-text Computer Systems Engineer
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "images/adrian.jpg"}/
+    .card-body
+      %h5.card-title Adrian Sanmiguel
+      %p.card-text Electrical Engineer
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "images/liam.jpg"}/
+    .card-body
+      %h5.card-title Liam Weston
+      %p.card-text Electrical Engineer - Group Manager
+
+= partial 'footer'
