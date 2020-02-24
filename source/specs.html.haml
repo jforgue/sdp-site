@@ -5,23 +5,27 @@ title: "Specs"
 = partial 'header', locals: { title: 'Requirements & Specifications', subtitle: '' }
 
 %section
-  .container
-    .row
-      .span4
-        %img.img-right{ src: 'images/block_diagram.jpg' }
-        %h3 Requirements
-        %ul.lead
-          %li Accuracy
-          %li Resonsivness
+  .card.mb-3{ style: "border: 0px;" }
+    .row.no-gutters
+      .col-md-4
+        %img.card-img{:alt => "block diagram", :src => "http://www.ecs.umass.edu/ece/sdp/sdp20/team05/images/block_diagram.jpg"}/
+      .col-md-8
+        .card-body
+          %h5 Requirements
+          %ul.left.lead
+            %li Accuracy
+            %li Responsivness
 
-%section.bg-light
-  .container
-    .row
-      .span4
-        %img.img-right{ src: 'images/algorithm.jpg' }
-        %h3 Specifications
-        %ul.lead
-          %li Distance less than 5cm
-          %li Response Time less than 500ms
+%section
+  .card.mb-3{ style: "border: 0px;" }
+    .row.no-gutters
+      .col-md-4
+        %img.card-img{:alt => "block diagram", :src => "http://www.ecs.umass.edu/ece/sdp/sdp20/team05/images/algorithm.jpg"}/
+      .col-md-8
+        .card-body
+          %h5 Specifications
+          %ul.left.lead
+            %li Distance less than 5cm
+            %li Response time less than 500ms
 
 = partial 'footer'
