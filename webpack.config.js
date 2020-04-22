@@ -14,4 +14,6 @@ module.exports = {
     path: path.join(__dirname, '.tmp', 'dist'),
     filename: 'javascripts/[name].js',
   },
+
+  mode: 'development'
 };
